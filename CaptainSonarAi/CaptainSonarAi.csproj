@@ -55,6 +55,45 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddDroneDialog.xaml.cs">
+      <DependentUpon>AddDroneDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddEnemyTorpedoDialog.xaml.cs">
+      <DependentUpon>AddEnemyTorpedoDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddFriendlyMineTriggeredDialog.xaml.cs">
+      <DependentUpon>AddFriendlyMineTriggeredDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddSonarDialog.xaml.cs">
+      <DependentUpon>AddSonarDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RangeCalculator.cs" />
+    <Compile Include="SelectMapDialog.xaml.cs">
+      <DependentUpon>SelectMapDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TraceMapControl.xaml.cs">
+      <DependentUpon>TraceMapControl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddDroneDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddEnemyTorpedoDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddFriendlyMineTriggeredDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddSonarDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameBoardControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,12 +102,33 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BoardFactory.cs" />
+    <Compile Include="EventHistory.cs" />
+    <Compile Include="GameBoard.cs" />
+    <Compile Include="GameBoardControl.xaml.cs">
+      <DependentUpon>GameBoardControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameEvent.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SelectMapDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TraceMapControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OptionTree.cs" />
+    <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

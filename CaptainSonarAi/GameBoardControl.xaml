@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="CaptainSonarAi.GameBoardControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CaptainSonarAi"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="500">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="LightSkyBlue">
+
+        <local:BorderGrid Margin="30,30,0,0" x:Name="SectorMap" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextBlock.FontSize="40" TextBlock.Foreground="Wheat" TextBlock.FontFamily="arial">
+            <local:BorderGrid.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                    <Setter Property="TextBlock.Foreground" Value="LightGray"/>
+                    <Setter Property="TextBlock.FontFamily" Value="Arial"/>
+                    <Setter Property="TextBlock.FontSize" Value="70"/>
+                    <Setter Property="TextBlock.FontWeight" Value="Black"/>
+                </Style>
+            </local:BorderGrid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label  Grid.Row="0" Grid.Column="0">1</Label>
+            <Label Grid.Row="0" Grid.Column="1">2</Label>
+            <Label  Grid.Row="0" Grid.Column="2">3</Label>
+            <Label  Grid.Row="1" Grid.Column="0">4</Label>
+            <Label  Grid.Row="1" Grid.Column="1">5</Label>
+            <Label  Grid.Row="1" Grid.Column="2">6</Label>
+            <Label  Grid.Row="2" Grid.Column="0">7</Label>
+            <Label Grid.Row="2" Grid.Column="1">8</Label>
+            <Label Grid.Row="2" Grid.Column="2">9</Label>
+
+        </local:BorderGrid>
+        <Grid x:Name="MasterGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    </Grid>
+</UserControl>

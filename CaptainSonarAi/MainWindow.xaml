@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CaptainSonarAi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" WindowState="Maximized" Height="350" Width="900" KeyUp="Grid_KeyUp" Loaded="Window_Loaded">
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            
+            <ListBox Width="200" VerticalAlignment="Stretch"  x:Name="History" HorizontalAlignment="Stretch"/>
+
+        <local:TraceMapControl VerticalAlignment="Top" BorderThickness="2" x:Name="traceMap" Height="500" Width="500" BorderBrush="DarkBlue"/>
+        <local:GameBoardControl VerticalAlignment="Top" x:Name="gameBoard" BorderThickness="2" Height="500" Width="500" BorderBrush="DarkBlue"></local:GameBoardControl>
+    </StackPanel>
 </Window>
