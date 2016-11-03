@@ -2,7 +2,7 @@
 A little hacked-together tool to help the Radio Operator in the Captain Sonar boardgame. Whether this is cheating or not - we'll leave that up to your morals and house rules. 
 
 # Disclaimer
-The creators of this software are in way associated with the publishers of the (awesome) board game. Although we do encourage people to buy the game.  
+The creators of this software are in no way associated with the publishers of the (awesome) board game. Although we do encourage people to buy the game.  
 https://www.asmodee.us/en/games/captain-sonar/
 
 ![screenshot](sonarscreenshot.png "Screenshot")
