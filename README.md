@@ -5,6 +5,9 @@ A little hacked-together tool to help the Radio Operator in the Captain Sonar bo
 The creators of this software are in way associated with the publishers of the (awesome) board game. Although we do encourage people to buy the game.  
 https://www.asmodee.us/en/games/captain-sonar/
 
+![screenshot](sonarscreenshot.png "Screenshot")
+
+
 # Use
 * Use the keyboard arrows to track the movement of the enemy sub. 
 * Backspace will undo movements
